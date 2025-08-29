@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - KODEFLEX</title>
+    <style>
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        header {
+            background-color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 3px solid #6c63ff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #6c63ff;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #6c63ff;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .project-card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .project-card a {
+            color: #6c63ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Habilidades (Skills) */
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background-color: #6c63ff;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Contacto */
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background-color: #6c63ff;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #5247d6;
+        }
+
+       
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Hola, soy David López 👋</h1>
+            <p>Programador Web | Desarrollador Front-End | Creador de Soluciones Digitales</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="about">
+            <h2>Sobre Mí</h2>
+            <p>Soy un programador apasionado con experiencia en el desarrollo de aplicaciones web interactivas y responsivas. Me especializo en HTML,CSS y JavaScript, y disfruto creando experiencias de usuario limpias y funcionales. Constantemente aprendo nuevas tecnologías para mejorar mis habilidades y enfrentar nuevos desafíos.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos Destacados</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Proyecto de ALSI</h3>
+                    <p>Una pagina web creada para un evento para INNOVATEC, destacada por su objetivo principal: el aprendizaje de lengua de señas inclusivas.</p>
+                 <a href="https://davislh.github.io/ALSI---Plataforma-Educativa/" target="_blank">Ver en GitHub</a>
+            
+                </div>
+                <div class="project-card">
+                    <h3>Clon de Landing Page</h3>
+                    <p>Un clon de una página de inicio popular, diseñado para perfeccionar mis habilidades en diseño responsivo y maquetación con CSS Flexbox y Grid.</p>
+                    <a href="#" target="_blank">Ver en GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Juego Simple</h3>
+                    <p>Un pequeño juego interactivo (ej. "Adivina el número") construido desde cero con JavaScript puro, enfocado en la lógica del juego y la interacción del usuario.</p>
+                    <a href="#" target="_blank">Ver en GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skill-item">HTML5</li>
+                <li class="skill-item">CSS3</li>
+                <li class="skill-item">JavaScript (ES6+)</li>
+                <li class="skill-item">Git & GitHub</li>
+                <li class="skill-item">Diseño Responsivo</li>
+                <li class="skill-item">Flexbox</li>
+                <li class="skill-item">CSS Grid</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>¿Tienes una idea o quieres colaborar? ¡Contáctame!</p>
+            <form class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 KODEFLEX. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+    
+
+        const contactForm = document.querySelector('.contact-form');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Aquí podrías añadir lógica de validación más avanzada
+            if (name && email && message) {
+                alert(`¡Gracias por tu mensaje, ${name}! Te responderé pronto.`);
+                // Aquí se podría integrar una llamada a una API para enviar el correo
+                // o mostrar un mensaje de éxito más sofisticado.
+                contactForm.reset(); // Limpia los campos del formulario
+            } else {
+                alert('Por favor, completa todos los campos.');
+            }
+        });
+    </script>
+</body>
+</html>
